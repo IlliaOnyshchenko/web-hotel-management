@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Resort - Welcome</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "b0Qhjm5fK-NHkGaX8",
+            });
+        })();
+    </script>
+</head>
+<header>
+    <div class="logo">
+        <img src="../image/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <a href="../logout.html" class="logout">Logout</a>
+</header>
+<body>
+<ul class="bg-animation-box">
+    <li class="circle-box"></li>
+    <li class="corners-box-20"></li>
+    <li class="circle-box"></li>
+    <li class="corners-box-20"></li>
+    <li></li>
+    <li class="corners-box-35"></li>
+    <li class="circle-box"></li>
+    <li></li>
+</ul>
+<section id="home" class="hero">
+    <img src="../image/image2.jpg" alt="Background" style="width: 100%; height: 100%; object-fit: cover; position: absolute; z-index: -1;">
+    <h1>Welcome to Heaven on Earth</h1>
+    <div class="book-room-container">
+        <button class="book-room">Book Room</button>
+    </div>
+</section>
+
+<section id="rooms" class="rooms">
+    <h1>Our Rooms</h1>
+
+    <div id="booking-modal" class="modal">
+        <div id="error-message">Please fill in all the fields.</div>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reservation</h2>
+            <div class="form-section">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter Full Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                </select>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="form-section">
+                <label for="room-type">Type of Room</label>
+                <select id="room-type" required>
+                    <option value="" disabled selected>Select Room Type</option>
+                    <option value="Single Room">Single Room</option>
+                    <option value="Guest Room">Guest Room</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Superior Room">Superior Room</option>
+                </select>
+
+                <label for="bed">Bed</label>
+                <select id="bed" required>
+                    <option value="" disabled selected>Select Bed</option>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Suite">Suite</option>
+                </select>
+
+                <label for="meal">Meal</label>
+                <select id="meal" required>
+                    <option value="" disabled selected>Select Meal</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Half-board">Half-board</option>
+                    <option value="Full-board">Full-board</option>
+                </select>
+
+                <label for="check-in">Check-in</label>
+                <input type="date" id="check-in" required>
+
+                <label for="check-out">Check-out</label>
+                <input type="date" id="check-out" required>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </div>
+    </div>
+    <div class="room-cards">
+        <div class="room-card">
+            <img src="../image/superior_room.jpg" alt="Superior Room">
+            <h3>Superior Room</h3>
+            <div class="features">
+                <span>Wi-Fi</span> | <span>Swimming Pool</span> | <span>TV</span> | <span>Spa</span> | <span>Gym</span>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="../image/deluxe_room.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <div class="features">
+                <span>Wi-Fi</span> | <span>TV</span> | <span>Gym</span>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="../image/guest_room.jpg" alt="Guest Room">
+            <h3>Guest Room</h3>
+            <div class="features">
+                <span>Wi-Fi</span> | <span>TV</span>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="../image/single_room.jpg" alt="Single Room">
+            <h3>Single Room</h3>
+            <div class="features">
+                <span>TV</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="service" class="service">
+    <h1>Our Services</h1>
+
+    <div class="service-cards">
+        <div class="service-card">
+            <img src="../image/swimming_pool.jpg" alt="Swimming Pool">
+            <div class="service-overlay">
+                <h3>Swimming Pool</h3>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="../image/spa.jpg" alt="Spa">
+            <div class="service-overlay">
+                <h3>Spa</h3>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="../image/restaurant.jpg" alt="24x7 Restaurants">
+            <div class="service-overlay">
+                <h3>24x7 Restaurants</h3>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="../image/gym.jpg" alt="24x7 Gym">
+            <div class="service-overlay">
+                <h3>24x7 Gym</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h1>Contact Us</h1>
+
+    <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required id="name">
+        <input type="email" placeholder="Your Email" required id="emailField">
+        <textarea placeholder="Your Message" rows="5" required id="message"></textarea>
+        <button type="submit" onclick="sendMail()">Submit</button>
+    </form>
+</section>
+
+<script src="../script.js"></script>
+</body>
+<div class="footer">
+    <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>50 Main St, Miami</p>
+    </div>
+    <div>
+        <i class="fas fa-phone-alt"></i>
+        <h3>Phone Number</h3>
+        <p>(617) 555-5555</p>
+    </div>
+    <div>
+        <i class="fas fa-envelope"></i>
+        <h3>Email Address</h3>
+        <p>palmresort@hotel.co</p>
+    </div>
+</div>
+</html>

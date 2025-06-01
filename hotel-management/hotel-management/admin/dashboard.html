@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="admin-panel">
+    <aside class="sidebar">
+        <div class="brand">
+            <h1>Hotel Admin</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="top-bar">
+            <h2>Welcome, Admin!</h2>
+            <div class="profile">
+                <img src="../image/admin_logo.png" alt="Admin Profile Picture" class="profile-pic">
+                <a href="../logout.html" class="logout">Logout</a>
+            </div>
+        </header>
+        <section class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Reservations</h3>
+                    <p id="total-reservations">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Guests Checked-In</h3>
+                    <p id="guests-checked-in">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Staff</h3>
+                    <p id="staff">0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

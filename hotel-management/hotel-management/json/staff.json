@@ -1,0 +1,7 @@
+[
+  { "id": "staff1", "name": "John Doe", "role": "Manager" },
+  { "id": "staff2", "name": "Jane Smith", "role": "Receptionist" },
+  { "id": "staff3", "name": "Mark Johnson", "role": "Housekeeping" },
+  { "id": "staff4", "name": "Emily Brown", "role": "Chef" },
+  { "id": "staff5", "name": "Frank Black", "role": "Housekeeping" }
+]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="admin-panel">
+    <aside class="sidebar">
+        <div class="brand">
+            <h1>Hotel Admin</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="payment.html" class="active">Payment</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+            </div>
+            <a href="../logout.html" class="logout">Logout</a>
+        </header>
+
+        <section class="table-section">
+            <table class="payment-table">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Type of Room</th>
+                    <th>Type of Bed</th>
+                    <th>Check-In</th>
+                    <th>Check-Out</th>
+                    <th>Meal</th>
+                    <th>Room Rent</th>
+                    <th>Meals Price</th>
+                    <th>Total Bill</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="payment-body"></tbody>
+            </table>
+        </section>
+    </main>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

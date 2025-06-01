@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="admin-panel">
+    <aside class="sidebar">
+        <div class="brand">
+            <h1>Hotel Admin</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="payment.html">Payments</a></li>
+                <li><a href="staff.html" class="active">Staff</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="top-bar">
+            <h2>Manage Staff</h2>
+            <a href="../logout.html" class="logout">Logout</a>
+        </header>
+        <section class="filter-section">
+            <div id="message-container" class="message-container hidden"></div>
+            <label for="staff-name">Staff Name:</label>
+            <input type="text" id="staff-name" name="staff-name" placeholder="Enter staff name">
+
+            <label for="staff-role">Role:</label>
+            <input type="text" id="staff-role" name="staff-role" placeholder="Enter staff role">
+
+            <button type="button" class="add-button">Add Staff</button>
+        </section>
+        <section class="staff-section"></section>
+
+    </main>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>

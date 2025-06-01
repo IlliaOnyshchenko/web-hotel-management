@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Resort</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <div id="message-container" class="message-container hidden"></div>
+    <div class="slideshow">
+        <img class="slide" src="image/image1.jpg" alt="Slide 1">
+        <img class="slide" src="image/image2.jpg" alt="Slide 2">
+        <img class="slide" src="image/image3.jpg" alt="Slide 3">
+    </div>
+    <div class="login-form">
+        <div class="logo">
+            <img src="image/logo.png" alt="Palm Resort Logo">
+        </div>
+        <div class="tabs">
+            <button class="tab active" data-type="user" id="user-tab">User</button>
+            <button class="tab" data-type="staff" id="staff-tab">Staff</button>
+        </div>
+        <h2 id="form-title">Log In</h2>
+        <form id="login-form"></form>
+        <p>
+            Don't have an account? <a href="#" id="signup-link">Sign up</a>
+        </p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
